@@ -1,10 +1,9 @@
-import * as types from "../actionTypes/types";
+// import * as types from "../actionTypes/types";
 
 const initialState = {};
 
 const yelpReducer = (state = initialState, action) => {
-  switch (
-    action.type
+  switch (action.type) {
     // case types.GET_DATA:
     //   return {
     //     ...state,
@@ -15,9 +14,9 @@ const yelpReducer = (state = initialState, action) => {
     //     ...state,
     //     data: [...state.data, ...action.payload]
     //   };
-    // default:
-    //   return state;
-  ) {
+
+    default:
+      return state;
   }
 };
 export default yelpReducer;
